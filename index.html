@@ -12,12 +12,12 @@
    <div id="search_bar">
      <div class="search_input">
        <label for="search"> Search: </label>
-       <input type="search" id="search" />
-       <input type="submit" id="submit" />
+       <input type="search" id="search" placeholder="Artist, Album, Song"/>
+       <input type="submit" id="submitButton" />
      </div>
      <div class="music_player">
-       <audio controls>
-         <source src="" type="audio/mpeg" />
+       <audio id="audioPlayer" controls autoplay>
+         <source id="audioFile" src="" type="audio/mp4" />
        </audio>
      </div>
    </div>
@@ -25,6 +25,9 @@
    <div id="search_results">
    </div>
 
+   <div id="nowPlaying">
+     Pick a track to preview!
+   </div>
   <script src="main.js"></script>
  </body>
 </html>
