@@ -52,9 +52,8 @@ fetch($request)
                  let audioPlayer = document.getElementById('audioPlayer');
                    audioPlayer.load();
 
-                 let nowPlaying = document.getElementById('nowPlaying');
-                 nowPlaying.innerHTML = "Now playing: " + this.id;
-
+                   let nowPlaying = document.getElementById('nowPlaying');
+                   nowPlaying.innerHTML = "Now playing: " + this.id;
 
           });
         }
@@ -63,3 +62,11 @@ fetch($request)
   }
  )
 });
+
+// graveyard: trying to to create new nowPlaying div
+// but it keeps creating more. need to mess with
+// removeChild method.
+
+//  let nowPlaying = document.createElement('div');
+//  nowPlaying.innerHTML = "Now Playing: " + this.id;
+//  nowPlaying.setAttribute('id', 'nowPlaying');

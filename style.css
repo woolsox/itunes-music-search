@@ -112,13 +112,11 @@ span h4 {
 
 span img {
  box-shadow: 1px 1px 10px #a9a9a9;
+ height: 100px;
+ width: 100px;
 }
 
 /*NOW PLAYING*/
-/*
-#nowPlaying:empty {
- display: none;
-}*/
 
 #nowPlaying {
  z-index: 1000;
@@ -131,4 +129,9 @@ span img {
  padding: 10px 10px;
  text-align: center;
  color: rgb(66, 133, 244);
+ transition-delay: 1s;
+}
+
+#nowPlaying p {
+ color: #2b2b2b;
 }
